@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <style>
+      div {
+        color: rgb(236, 56, 56);
+        display: block;
+        border: 1rem;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #e9761e;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: auto;
+      }
+      h2 {
+        text-align: center;
+      }
+      button {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Student Registration Form</h2>
+    <form action="https://newerp.kluniversity.in/index.php">
+      <h3>Personal Information</h3>
+      <div>
+        <label for="fn">Full Name:</label>
+        <input type="text" placeholder="Enter Name" required /> <br />
+      </div>
+      <br />
+      <div>
+        <label for="gn">Gender:</label>
+        <input type="radio" name="gn" value="m" />Male
+        <input type="radio" name="gn" value="f" />Female <br />
+      </div>
+      <br />
+      <div>
+        E-Mail: <input type="email" placeholder="Enter email" required /> <br />
+      </div>
+      <br />
+      <div>
+        <label for="ct">Contact:</label>
+        <input
+          type="tel"
+          placeholder="Enter Mobile Number"
+          required
+          maxlength="10"
+          minlength="10"
+        />
+        <br />
+      </div>
+      <br />
+      <div>
+        <label for="dob">Date of birth:</label> <input type="date" /> <br />
+      </div>
+      <br />
+      <div>
+        <label for="add">Address:</label> <textarea rows="5"> </textarea> <br />
+      </div>
+      <br />
+      <h3>Academic Details</h3>
+      <div>
+        <label for="br">Branch:</label>
+        <select>
+          <option value="">Select Branch</option>
+          <option value="cse">Computer Science & engineering</option>
+          <option value="ece">Electronics Engineering</option>
+          <option value="eee">Electrical Engineering</option>
+          <option value="me">Mechanical Engineering</option>
+        </select>
+        <br />
+      </div>
+      <br />
+      <div>
+        <label for="lang">Languages Known:</label>
+        <input type="checkbox" name="ch" value="tel" />Telugu
+        <input type="checkbox" name="ch" value="eng" />English
+        <input type="checkbox" name="ch" value="hin" />Hindi
+        <input type="checkbox" name="ch" value="tam" />Tamil
+        <br />
+      </div>
+      <br />
+      <div>
+        <label for="res">Upload Resume:</label> <input type="file" /> <br />
+        <br />
+      </div>
+      <br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
