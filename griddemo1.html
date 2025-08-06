@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout - KL University</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "box1 box2 box3 sidebar"
+          "main main main sidebar"
+          "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        gap: 10px;
+        height: 100vh;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: #f08080;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 15px;
+      }
+
+      .box1 {
+        grid-area: box1;
+        background-color: lightgreen;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .box2 {
+        grid-area: box2;
+        background-color: cadetblue;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .box3 {
+        grid-area: box3;
+        background-color: lightpink;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: darkgoldenrod;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: plum;
+        text-align: center;
+        padding: 40px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: slategray;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">KL University</div>
+      <div class="box1">Small box1</div>
+      <div class="box2">Small box2</div>
+      <div class="box3">Small box3</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="main">Main Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

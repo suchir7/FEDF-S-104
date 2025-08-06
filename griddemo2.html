@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid Display</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "search search search"
+          "left middle right";
+        grid-template-rows: 60px 40px 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 100vh;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: peachpuff;
+        padding: 10px;
+      }
+
+      .search {
+        grid-area: search;
+        background-color: lightgreen;
+        padding: 10px;
+      }
+
+      .left {
+        grid-area: left;
+        background-color: lightblue;
+        padding: 10px;
+      }
+
+      .middle {
+        grid-area: middle;
+        background-color: white;
+        padding: 10px;
+      }
+
+      .right {
+        grid-area: right;
+        background-color: pink;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="search">Search</div>
+      <div class="left">Left Side Bar</div>
+      <div class="middle">Middle</div>
+      <div class="right">Right side Bar</div>
+    </div>
+  </body>
+</html>

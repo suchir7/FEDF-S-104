@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Demo</title>
+    <style>
+      .container {
+        display: grid;
+        grid-row: 10% 80% 10%;
+        grid-column: 35% 30% 30%;
+        height: 100vh;
+      }
+      .hd {
+        background-color: bisque;
+        grid-row: 1/2;
+        grid-column: 1/4;
+        height: 10vh;
+      }
+      .lt {
+        background-color: chocolate;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        height: 80vh;
+      }
+      .ms {
+        background-color: aqua;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        height: 80vh;
+      }
+      .rt {
+        background-color: brown;
+        grid-row: 2/3;
+        grid-column: 3/4;
+        height: 80vh;
+      }
+      .ft {
+        background-color: burlywood;
+        grid-row: 3/4;
+        grid-column: 1/4;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hd">Header</div>
+      <div class="lt">Left Side Bar</div>
+      <div class="ms">Main Section</div>
+      <div class="rt">Right Side Bar</div>
+      <div class="ft">Footer</div>
+    </div>
+  </body>
+</html>
