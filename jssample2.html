@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <script language="JavaScript">
+      var x = 123;
+      var y = 0;
+      var z;
+      while (x > 0) {
+        z = x % 10;
+        y += z;
+        x = parseInt(x / 10);
+        document.write(x + "<BR>");
+        document.write(y + "<BR>");
+        document.write(z + "<BR>");
+      }
+      document.write(y);
+    </script>
+  </body>
+</html>

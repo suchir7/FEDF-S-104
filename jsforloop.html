@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript For Loop Variations</title>
+  </head>
+  <body>
+    <h1>JavaScript For Loop Variations</h1>
+    <script>
+      let numbers = [10, 20, 30, 40];
+      document.write(typeof numbers);
+
+      // 1. Standard for loop
+      document.write("<h2>1. Standard for Loop</h2>");
+      for (let i = 0; i < numbers.length; i++) {
+        document.write("Index " + i + " = " + numbers[i] + "<br>");
+      }
+      document.write("<br>");
+
+      // 2. for...in loop (iterates over indexes/keys)
+      document.write("<h2>2. for...in Loop</h2>");
+      for (let index in numbers) {
+        document.write("Index " + index + " = " + numbers[index] + "<br>");
+      }
+      document.write("<br>");
+
+      // 3. for...of loop (iterates over values)
+      document.write("<h2>3. for...of Loop</h2>");
+      for (let value of numbers) {
+        document.write("Value = " + value + "<br>");
+      }
+      document.write("<br>");
+
+      // 4. forEach() method (array-specific)
+      document.write("<h2>4. forEach() Method</h2>");
+      numbers.forEach(function (value, index) {
+        document.write("Index " + index + " = " + value + "<br>");
+      });
+      document.write("<br>");
+
+      // Example with objects
+      let student = { name: "John", age: 20, grade: "A" };
+
+      document.write("<h2>5. for...in with Object</h2>");
+      for (let key in student) {
+        document.write(key + " : " + student[key] + "<br>");
+      }
+
+      // for...of works on iterable objects like arrays, strings, maps, sets
+      document.write("<h2>6. for...of with String</h2>");
+      let word = "Hello";
+      for (let char of word) {
+        document.write(char + "<br>");
+      }
+    </script>
+  </body>
+</html>
