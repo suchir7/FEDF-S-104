@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Input Types Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      form {
+        max-width: 500px;
+        margin: auto;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .inline {
+        display: inline-block;
+        width: auto;
+        margin-right: 10px;
+      }
+      .btns input {
+        width: auto;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">HTML Input Types Demo Form</h2>
+
+    <form>
+      <!-- Text -->
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name" />
+
+      <!-- Password -->
+      <label>Password:</label>
+      <input type="password" placeholder="Enter password" />
+
+      <!-- Email -->
+      <label>Email:</label>
+      <input type="email" placeholder="Enter email" />
+
+      <!-- Number -->
+      <label>Age:</label>
+      <input type="number" min="1" max="120" />
+
+      <!-- Telephone -->
+      <label>Phone:</label>
+      <input type="tel" placeholder="123-456-7890" />
+
+      <!-- URL -->
+      <label>Website:</label>
+      <input type="url" placeholder="https://example.com" />
+
+      <!-- Date & Time -->
+      <label>Date of Birth:</label>
+      <input type="date" />
+
+      <label>Meeting Time:</label>
+      <input type="time" />
+
+      <label>Appointment (Date & Time):</label>
+      <input type="datetime-local" />
+
+      <label>Select Month:</label>
+      <input type="month" />
+
+      <label>Select Week:</label>
+      <input type="week" />
+
+      <!-- Radio -->
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" class="inline" /> Male
+      <input type="radio" name="gender" value="female" class="inline" /> Female
+
+      <!-- Checkbox -->
+      <label>Hobbies:</label>
+      <input type="checkbox" name="hobby" value="sports" class="inline" />
+      Sports
+      <input type="checkbox" name="hobby" value="music" class="inline" /> Music
+      <input type="checkbox" name="hobby" value="travel" class="inline" />
+      Travel
+
+      <!-- Color -->
+      <label>Pick a Favorite Color:</label>
+      <input type="color" />
+
+      <!-- Range -->
+      <label>Rate our site (1 to 10):</label>
+      <input type="range" min="1" max="10" />
+
+      <!-- File -->
+      <label>Upload File:</label>
+      <input type="file" />
+
+      <!-- Hidden -->
+      <input type="hidden" value="secretData" />
+
+      <!-- Dropdown -->
+      <label>Country:</label>
+      <select>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+        <option>Canada</option>
+      </select>
+
+      <!-- Textarea -->
+      <label>Comments:</label>
+      <textarea rows="4" placeholder="Write something..."></textarea>
+
+      <!-- Buttons -->
+      <div class="btns">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <input
+          type="button"
+          value="Click Me"
+          onclick="alert('Button clicked!')"
+        />
+      </div>
+    </form>
+  </body>
+</html>
