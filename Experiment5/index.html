@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="registrationForm" novalidate>
+      <h2>Register</h2>
+
+      <label
+        >Full Name:
+        <input type="text" id="fullName" required minlength="3" />
+        <span class="error" id="nameError"></span>
+      </label>
+
+      <label
+        >Email:
+        <input type="email" id="email" required />
+        <span class="error" id="emailError"></span>
+      </label>
+
+      <label
+        >Password:
+        <input type="password" id="password" required minlength="8" />
+        <span class="error" id="passwordError"></span>
+      </label>
+
+      <label
+        >Phone Number:
+        <input type="tel" id="phone" required pattern="^[6-9]\d{9}$" />
+        <span class="error" id="phoneError"></span>
+      </label>
+
+      <button type="submit">Register</button>
+      <div id="successMessage"></div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
